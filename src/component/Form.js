@@ -82,7 +82,7 @@ const Form = () => {
           {message ? <Message variant="success">{message}</Message> : null}
           <label htmlFor="url">Url checker</label>
           {axiosResponse ? (
-            <div>
+            <div className="link-response-div">
               <a
                 href={axiosResponse?.newUrl}
                 target="_blank"
