@@ -72,9 +72,11 @@ const Form = () => {
         is secured or not. It accepts all forms of url format. For example, you
         can type nairaland.com, vercel.com, and so on, and it will first check
         whether the url is secured before giving the user the go ahead order to
-        navigate to the url
+        navigate to the url.
       </p>
-      <p>You can give that a try; it's totally free!!!</p>
+      <p className="italics-paragraph">
+        You can give that a try; it's totally free!!!
+      </p>
       <form onSubmit={handleSubmit}>
         <div>
           {loading ? <Loader size={50} spin /> : null}
