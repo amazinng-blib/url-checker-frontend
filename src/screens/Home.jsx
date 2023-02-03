@@ -5,13 +5,11 @@ import Form from '../component/Form';
 const Home = () => {
   return (
     <div className="home-container">
-      {/* <Helmet>
+      <Helmet>
         <title>URL checker</title>
       </Helmet>
 
-      <Form /> */}
-
-      <h2>Fuck Youuuuuu!!</h2>
+      <Form />
     </div>
   );
 };
