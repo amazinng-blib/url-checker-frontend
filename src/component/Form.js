@@ -12,33 +12,33 @@ const Form = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      setLoading(true);
-      const config = {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
-      const { data } = await axios.get(`${SERVER}/url-checker/${url}`, config);
-      console.log(data?.message);
-      console.log(data);
-      setAxiosResponse(data);
-      setMessage(data?.message);
-      setLoading(false);
-    } catch (error) {
-      setLoading(false);
-      setError(
-        error?.response && error?.response?.data?.message
-          ? error?.response?.data?.message
-          : error?.response?.data
-          ? error?.response?.data
-          : error?.message
-      );
-    }
-  };
+  //   try {
+  //     setLoading(true);
+  //     const config = {
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     };
+  //     const { data } = await axios.get(`${SERVER}/url-checker/${url}`, config);
+  //     console.log(data?.message);
+  //     console.log(data);
+  //     setAxiosResponse(data);
+  //     setMessage(data?.message);
+  //     setLoading(false);
+  //   } catch (error) {
+  //     setLoading(false);
+  //     setError(
+  //       error?.response && error?.response?.data?.message
+  //         ? error?.response?.data?.message
+  //         : error?.response?.data
+  //         ? error?.response?.data
+  //         : error?.message
+  //     );
+  //   }
+  // };
 
   useEffect(() => {
     const time = setTimeout(() => {
