@@ -1,1 +1,1 @@
-export const SERVER = ' https://cloudy-pullover-eel.cyclic.app';
+export const SERVER = ' https://motionless-cardigan-crab.cyclic.app';
